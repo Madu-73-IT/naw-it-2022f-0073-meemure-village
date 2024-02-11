@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.baner-area {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 30px;
+}
+
+.navbar {
+  display: flex;
+
+  align-items: center;
+  background-color: #9bb5ac;
+  padding-right: 5%;
+  justify-content: space-between;
+  color: rgba(209, 19, 19, 0.762);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(203, 14, 14);
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+
+.logo {
+  color: rgb(11, 110, 49);
+  font-size: 28px;
+  font-family: cursive;
+  padding: 12px 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav ul li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: hsl(20, 6%, 10%);
+  transition: 3s;
+}
+
+nav ul.active {
+  color: #ff80ff;
+}
+
+.contact-line {
+  border: none;
+  background-color: rgb(120, 230, 140);
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: rgb(240, 20, 20);
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.5s;
+  transform: scale(0.5);
+  cursor: pointer;
+}
+
+.contact-line:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.ctn {
+  font-size: medium;
+  text-decoration: none;
+  color: rgb(6, 106, 6);
+}
+
+/*about page style*/
+.about_section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.image_section {
+  width: 54%;
+  height: auto;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.About_img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content_section {
+  position: absolute;
+  width: 46%;
+  height: auto;
+  border-radius: 4px;
+  right: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  row-gap: 1.1rem;
+  padding: 30px 80px 30px 80px;
+  box-shadow: 5px 5px 10px cornflowerblue;
+  border: 1px solid rgb(11, 110, 49);
+  background-color: #fff;
+}
+
+.about_title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: var(--primary);
+  font-family: Lucida console;
+}
+
+.about_main {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+.about_desc {
+  font-size: 0.93rem;
+  line-height: 1.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.explore-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore-section-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.explore-section-header {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.explore-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hiking-image-container {
+  cursor: pointer;
+  padding: 20px;
+  width: 20vw;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+  box-shadow: 2px 5px 15px #a41d62;
+}
+
+.hiking-img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.hiking-img:hover {
+  transform: scale(1.5);
+}
+
+.thame {
+  padding: 10px;
+  color: #413d3d;
+  background-color: #f9f9f9;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(82, 233, 108);
+}
+
+/*contact page style*/
+
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px;
+  height: auto;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.right {
+  padding: 25px 40px;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+h2 {
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+.left {
+  display: flex;
+  flex-grow: 1;
+  height: 400px;
+  width: 50vw;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.field {
+  width: 250px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.btn {
+  background-color: rgb(188, 246, 198);
+  cursor: pointer;
+}
+
+.sci {
+  margin-top: 40px;
+  display: flex;
+}
+
+.sci li {
+  margin-right: 15px;
+}
